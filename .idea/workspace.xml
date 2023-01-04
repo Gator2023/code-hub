@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d7ae90-e756-4a73-88b4-3f833fc083ec" name="Changes" comment="SeleniumDemo-ParaBank">
-      <change afterPath="$PROJECT_DIR$/src/test/java/batch3/InformationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/batch3/SelectTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/batch2/InteractingWebElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/batch2/InteractingWebElementTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +70,7 @@
       </branch-storage>
     </excluded-from-favorite>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -246,7 +244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672694526989</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="SeleniumDemo-ParaBank">
+      <created>1672712815536</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672712815536</updated>
+    </task>
+    <task id="LOCAL-00010" summary="SeleniumDemo-ParaBank">
+      <created>1672712842647</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1672712842647</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
