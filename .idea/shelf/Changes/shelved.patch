@@ -1,0 +1,134 @@
+Index: src/main/java/org/example/Main.java
+===================================================================
+diff --git a/src/main/java/org/example/Main.java b/src/main/java/org/example/Main.java
+deleted file mode 100644
+--- a/src/main/java/org/example/Main.java	(revision bee399ed6464f9f3bb1da05304d26cc3794b38a3)
++++ /dev/null	(revision bee399ed6464f9f3bb1da05304d26cc3794b38a3)
+@@ -1,7 +0,0 @@
+-package org.example;
+-
+-public class Main {
+-    public static void main(String[] args) {
+-        System.out.println("Hello world!");
+-    }
+-}
+\ No newline at end of file
+Index: src/test/java/batch3/AlertsPrompts.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/batch3/AlertsPrompts.java b/src/test/java/batch3/AlertsPrompts.java
+new file mode 100644
+--- /dev/null	(date 1672889106902)
++++ b/src/test/java/batch3/AlertsPrompts.java	(date 1672889106902)
+@@ -0,0 +1,67 @@
++package batch3;
++
++import io.github.bonigarcia.wdm.WebDriverManager;
++import org.openqa.selenium.Alert;
++import org.openqa.selenium.By;
++import org.openqa.selenium.WebDriver;
++import org.openqa.selenium.chrome.ChromeDriver;
++
++import java.time.Duration;
++
++public class AlertsPrompts {
++    public static void main(String[] args) throws InterruptedException {
++        WebDriverManager.chromedriver().setup();
++        WebDriver driver=new ChromeDriver();
++
++        driver.get("https://demoqa.com/alerts");
++        driver.manage().window().maximize();
++        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
++
++//JavaScripts alerts
++        driver.findElement(By.id("alertButton")).click();
++        Thread.sleep(3000);
++        driver.switchTo().alert().accept();
++  //confirm alert
++        driver.findElement(By.id("confirmButton")).click();
++        System.out.println(driver.switchTo().alert().getText());
++       // driver.switchTo().alert().accept();
++        Thread.sleep(3000);
++        driver.switchTo().alert().dismiss();
++  //prompts alart
++        driver.findElement(By.id("promtButton")).click();
++        Thread.sleep(3000);
++        driver.switchTo().alert().sendKeys("Welcome");
++        Thread.sleep(3000);
++        driver.switchTo().alert().accept();
++
++
++
++        driver.navigate().refresh();
++
++
++
++      //JavaScripts alerts
++        driver.findElement(By.id("alertButton")).click();
++        Alert alert=driver.switchTo().alert();
++        Thread.sleep(4000);
++        alert.accept();
++
++        //confirm alert
++        driver.findElement(By.id("confirmButton")).click();
++        System.out.println(alert.getText());
++        Thread.sleep(4000);
++        alert.dismiss();
++
++        //prompts alert
++        driver.findElement(By.id("promtButton")).click();
++        System.out.println(alert.getText());
++        Thread.sleep(4000);
++        alert.sendKeys("Thank you");
++        Thread.sleep(4000);
++        alert.accept();
++
++        driver.quit();
++
++
++    }
++}
+Index: src/test/java/batch3/SelectTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package batch3;\r\n\r\nimport io.github.bonigarcia.wdm.WebDriverManager;\r\nimport org.apache.commons.compress.compressors.zstandard.ZstdCompressorOutputStream;\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.WebDriver;\r\nimport org.openqa.selenium.WebElement;\r\nimport org.openqa.selenium.chrome.ChromeDriver;\r\nimport org.openqa.selenium.support.ui.Select;\r\n\r\nimport java.time.Duration;\r\n\r\npublic class SelectTest {\r\n    public static void main(String[] args) throws InterruptedException {\r\n        WebDriverManager.chromedriver().setup();\r\n        WebDriver driver = new ChromeDriver();\r\n        driver.get(\"https://demo.guru99.com/test/newtours/register.php\");\r\n        driver.manage().window().maximize();\r\n        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));\r\n        Select select = new Select(driver.findElement(By.name(\"country\")));\r\n        select.selectByIndex(2);\r\n        Thread.sleep(3000);\r\n        select.selectByValue(\"ALBANIA\");\r\n        Thread.sleep(3000);\r\n        select.deselectByVisibleText(\"ANTARCTICA\");\r\n        Thread.sleep(3000);\r\n//extended loop\r\n        for (WebElement element : select.getOptions()) {\r\n            System.out.println(element.getText());\r\n        }\r\n\r\n\r\n        driver.quit();\r\n\r\n    }\r\n}\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/batch3/SelectTest.java b/src/test/java/batch3/SelectTest.java
+--- a/src/test/java/batch3/SelectTest.java	(revision bee399ed6464f9f3bb1da05304d26cc3794b38a3)
++++ b/src/test/java/batch3/SelectTest.java	(date 1672809071403)
+@@ -20,9 +20,9 @@
+         Select select = new Select(driver.findElement(By.name("country")));
+         select.selectByIndex(2);
+         Thread.sleep(3000);
+-        select.selectByValue("ALBANIA");
++        select.selectByValue("ANGOLA");
+         Thread.sleep(3000);
+-        select.deselectByVisibleText("ANTARCTICA");
++        select.deselectByVisibleText("BANGLADESH");
+         Thread.sleep(3000);
+ //extended loop
+         for (WebElement element : select.getOptions()) {
+Index: src/test/java/batch3/InformationTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package batch3;\r\n\r\nimport io.github.bonigarcia.wdm.WebDriverManager;\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.WebDriver;\r\nimport org.openqa.selenium.chrome.ChromeDriver;\r\n\r\nimport java.time.Duration;\r\n\r\npublic class InformationTest {\r\n    public static void main(String[] args) throws InterruptedException {\r\n        WebDriverManager.chromedriver().setup();\r\n        WebDriver driver = new ChromeDriver();\r\n        driver.get(\"https://demoqa.com/text-box\");\r\n        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));\r\n\r\n        System.out.println(\"Display : \"+ driver.findElement(By.id(\"userName\")).isDisplayed());\r\n        System.out.println(\"IsEnabled : \"+ driver.findElement(By.id(\"userName\")).isEnabled());\r\n        Thread.sleep(3000);\r\n\r\n        driver.navigate().to(\"https://demoqa.com/checkbox\");\r\n        Thread.sleep(3000);\r\n        driver.navigate().back();\r\n        Thread.sleep(3000);\r\n        driver.navigate().forward();\r\n        Thread.sleep(3000);\r\n        driver.navigate().refresh();\r\n        Thread.sleep(3000);\r\n\r\n\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/batch3/InformationTest.java b/src/test/java/batch3/InformationTest.java
+--- a/src/test/java/batch3/InformationTest.java	(revision bee399ed6464f9f3bb1da05304d26cc3794b38a3)
++++ b/src/test/java/batch3/InformationTest.java	(date 1672810407980)
+@@ -28,6 +28,8 @@
+         Thread.sleep(3000);
+ 
+ 
++        driver.quit();
++
+     }
+ 
+ }
+\ No newline at end of file
