@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5d7ae90-e756-4a73-88b4-3f833fc083ec" name="Changes" comment="SeleniumDemo-ParaBank">
-      <change afterPath="$PROJECT_DIR$/src/test/java/batch3/PromptsAlerts.java" afterDir="false" />
+    <list default="true" id="8aa9810c-1e3a-40b9-af7d-073f9a4955af" name="Changes" comment="SeleniumDemo-ParaBank">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
