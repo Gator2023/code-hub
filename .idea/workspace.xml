@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d7ae90-e756-4a73-88b4-3f833fc083ec" name="Changes" comment="SeleniumDemo-ParaBank">
+      <change afterPath="$PROJECT_DIR$/src/test/java/batch3/PromptsAlerts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,23 +27,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SeleniumDemo" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SeleniumDemo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SeleniumDemo" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -83,9 +69,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   },
@@ -95,7 +85,20 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.SelectTest">
+  <component name="RunManager" selected="Application.ChromeDriverTest">
+    <configuration name="ChromeDriverTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="batch1.ChromeDriverTest" />
+      <module name="SeleniumDemo.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="batch1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InformationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="batch3.InformationTest" />
       <module name="SeleniumDemo.test" />
@@ -122,12 +125,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocatorTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="batch1.LocatorTests" />
-      <module name="SeleniumDemo.test" />
+    <configuration name="PromptsAlerts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="batch3.PromptsAlerts" />
+      <module name="SeleniumDemo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="batch1.*" />
+          <option name="PATTERN" value="batch3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,34 +151,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeleniumDemo [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChromeDriverTest" />
+        <item itemvalue="Application.PromptsAlerts" />
         <item itemvalue="Application.SelectTest" />
         <item itemvalue="Application.InformationTest" />
         <item itemvalue="Application.InteractingWebElementTest" />
-        <item itemvalue="Application.LocatorTests" />
-        <item itemvalue="Gradle.SeleniumDemo [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -275,5 +257,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SeleniumDemo-ParaBank" />
     <option name="LAST_COMMIT_MESSAGE" value="SeleniumDemo-ParaBank" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SeleniumDemo$AlertsPrompts.ic" NAME="AlertsPrompts Coverage Results" MODIFIED="1672887464725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>batch3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/SeleniumDemo$PromptsAlerts.ic" NAME="PromptsAlerts Coverage Results" MODIFIED="1674194481349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>batch3.*</FILTER>
+    </SUITE>
   </component>
 </project>
