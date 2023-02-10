@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8aa9810c-1e3a-40b9-af7d-073f9a4955af" name="Changes" comment="SeleniumDemo-ParaBank">
+    <list default="true" id="8aa9810c-1e3a-40b9-af7d-073f9a4955af" name="Changes" comment="Delete modules.xml">
+      <change afterPath="$PROJECT_DIR$/src/test/java/batch3/Iframes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/batch1/ChromeDriverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/batch1/ChromeDriverTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +55,17 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Gator2023 &lt;121417849+gator2023@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -83,7 +96,12 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.ChromeDriverTest">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="batch3" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Iframes">
     <configuration name="ChromeDriverTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="batch1.ChromeDriverTest" />
       <module name="SeleniumDemo.test" />
@@ -97,8 +115,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InformationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="batch3.InformationTest" />
+    <configuration name="Iframes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="batch3.Iframes" />
       <module name="SeleniumDemo.test" />
       <extension name="coverage">
         <pattern>
@@ -110,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InteractingWebElementTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="batch2.InteractingWebElementTest" />
+    <configuration name="InformationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="batch3.InformationTest" />
       <module name="SeleniumDemo.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="batch2.*" />
+          <option name="PATTERN" value="batch3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,18 +169,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Iframes" />
         <item itemvalue="Application.ChromeDriverTest" />
         <item itemvalue="Application.PromptsAlerts" />
         <item itemvalue="Application.SelectTest" />
         <item itemvalue="Application.InformationTest" />
-        <item itemvalue="Application.InteractingWebElementTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e5d7ae90-e756-4a73-88b4-3f833fc083ec" name="Changes" comment="" />
+      <changelist id="8aa9810c-1e3a-40b9-af7d-073f9a4955af" name="Changes" comment="Delete modules.xml" />
       <created>1672543543934</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -238,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672712842647</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Delete modules.xml">
+      <created>1674239500334</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674239500334</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,7 +279,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="SeleniumDemo-ParaBank" />
-    <option name="LAST_COMMIT_MESSAGE" value="SeleniumDemo-ParaBank" />
+    <MESSAGE value="Delete modules.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete modules.xml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SeleniumDemo$AlertsPrompts.ic" NAME="AlertsPrompts Coverage Results" MODIFIED="1672887464725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
